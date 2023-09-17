@@ -43,7 +43,7 @@ if __name__ == '__main__':
     
     
     with multiprocessing.Pool(processes=num_cores) as pool:
-        results = pool.starmap(worker, [(popn_path, folder) for folder in popn_folder[:2]])
+        results = pool.starmap(worker, [(popn_path, folder) for folder in popn_folder])
             
     '''
     for folder in tqdm(popn_folder):
